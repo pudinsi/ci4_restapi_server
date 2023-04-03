@@ -35,6 +35,9 @@ $routes->get('/pegawai', 'Pegawai::index');
 $routes->get('/pegawai/(:any)', 'Pegawai::index/$1');
 $routes->post('/pegawai', 'Pegawai::create');
 
+$routes->get('/api', 'Api::index');
+$routes->post('/api/table', 'Api::table');
+$routes->get('/api/lihat', 'Api::lihat');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
